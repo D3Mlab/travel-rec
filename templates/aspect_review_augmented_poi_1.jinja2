@@ -1,0 +1,22 @@
+I'm going on a trip to {{destination}} for {{trip_length}}.
+
+Here are some reviews about {{destination}} for the following consideration: {{aspect}}. Use them to help create a list of things to do there:
+{{reviews}}
+
+Give me suggestions for POIs to go to with {{context}} there. List pros and cons for each POI realtive to each otehr based on the consideration of {{aspect}}. 
+Format the output as a JSON list as follows:
+[
+    {
+        "name":<name of POI 1>, 
+        "justification":<why is POI 1 a good option>, 
+        "pros":<pros for POI 1 versus the rest>, 
+        "cons":<cons for POI 1 versus the rest>
+    }, 
+    {
+        "name":<name of POI 2>,
+        "justification":<why is POI 2 a good option>,
+        "pros":<pros for POI 2 versus the rest>,
+        "cons":<cons for POI 2 versus the rest>
+    }, 
+    ...
+]
